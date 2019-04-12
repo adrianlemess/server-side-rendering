@@ -2,7 +2,6 @@
 
 Esse repositório contém algumas POCs e material para configuração de SSR em Vue, React e Angular, explorando algumas opções existentes no mercado.
 
-
 ## Conceitos
 
 * Universal app - É quando o código da aplicação consegue rodar em multiplos ambientes
@@ -38,6 +37,15 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 ### CSR
 
 ![CSR](assets/csr.png)
+
+## Opções de SSR
+
+- Hypernova Airbnb
+- Next 
+- Nuxt
+- Angular Universal App
+- After.js
+- Gerador Razzler
 
 ## SSR específicos por linguagem
 
