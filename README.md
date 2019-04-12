@@ -33,4 +33,7 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 ## Conceitos
 
 Universal app - 
-Isomorphic app - 
+Isomorphic app -
+SSR - 
+CSR - 
+SEO -  
