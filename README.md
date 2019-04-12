@@ -32,8 +32,8 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 
 ## Conceitos
 
-Universal app - 
-Isomorphic app -
-SSR - 
-CSR - 
-SEO -  
+* Universal app - É quando o código da aplicação consegue rodar em multiplos ambientes
+* Isomorphic app - Diz respeito a capacidade da aplicação ser alternada entre client e server sem parter o estado dela.
+* SSR - Server side rendering.
+* CSR - Client side rendering
+* SEO -  Search Engine Optimization, conjunto de tecnicas de otimização que visam alcançar bons rankins orgânicos em buscadores, aumento o potencial de novos clientes encontrarem o site nesses mecanismos de pesquisa.
