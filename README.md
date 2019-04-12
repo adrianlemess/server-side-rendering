@@ -2,6 +2,16 @@
 
 Esse repositório contém algumas POCs e material para configuração de SSR em Vue, React e Angular, explorando algumas opções existentes no mercado.
 
+
+## Conceitos
+
+* Universal app - É quando o código da aplicação consegue rodar em multiplos ambientes
+* Isomorphic app - Diz respeito a capacidade da aplicação ser alternada entre client e server sem parter o estado dela.
+* SSR - Server side rendering.
+* CSR - Client side rendering
+* SEO -  Search Engine Optimization, conjunto de tecnicas de otimização que visam alcançar bons rankins orgânicos em buscadores, aumento o potencial de novos clientes encontrarem o site nesses mecanismos de pesquisa.
+* Single Page Application - É o conceito de renderizar templates e código javascript para montagem de telas no browser. A experiência é de ter várias páginas, mas por baixo é uma aplicação única, carrega uma vez só.
+
 ## O que é Server Side Rendering
 
 É o processo de renderizar um framework JavaScript no servidor, renderizando HTML e CSS estático. 
@@ -29,11 +39,7 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 
 ![CSR](assets/csr.png)
 
+## SSR específicos por linguagem
 
-## Conceitos
+### Vue
 
-* Universal app - É quando o código da aplicação consegue rodar em multiplos ambientes
-* Isomorphic app - Diz respeito a capacidade da aplicação ser alternada entre client e server sem parter o estado dela.
-* SSR - Server side rendering.
-* CSR - Client side rendering
-* SEO -  Search Engine Optimization, conjunto de tecnicas de otimização que visam alcançar bons rankins orgânicos em buscadores, aumento o potencial de novos clientes encontrarem o site nesses mecanismos de pesquisa.
