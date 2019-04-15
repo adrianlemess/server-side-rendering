@@ -1,7 +1,7 @@
 {
-  "name": "vue-template-ssr",
+  "name": "vue-ssr",
   "version": "1.0.0",
-  "description": "Nuxt + vue project to run inside a micro-frontend application",
+  "description": "project to work via SSR",
   "author": "Adrian Lemes",
   "private": true,
   "scripts": {

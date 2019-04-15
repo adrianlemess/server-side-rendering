@@ -49,5 +49,32 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 
 ## SSR específicos por linguagem
 
-### Vue
+### Vue (create-nuxt-app)
 
+Ter o npx instalado na máquina
+
+```bash
+npm install -g npx
+```
+
+Instalar o create-nuxt-app
+```bash
+npx create-nuxt-app <project-name>
+```
+Ir selecionando as opções
+
+* Project name - nome do projeto, default de onde a pasta esta
+* Project description
+* Custom server framework - opções são express, koa, adonis, hapi, feathers e micro
+* Selecionar algumas features - PWA, Linter (configuração de LINT), prettier (ajuda na formatação do código) e Axios (HTTP requests)
+* Framework de UI - bootstrap, vuetify, bulma, tailwind, element-ui, buefy
+* Framework de teste - jest ou ava
+* Rendering mode - universal app ou SPA. Selecione universal para ser SSR
+
+
+#### Considerações
+
+- O método asyncData no index.vue é responsável por hidratar o componente com dados no first loading da aplicação. Assim antes de entregar para o browser, ele faz a request de posts e já entrega o componente com os dados renderizados.
+- Para rodar o projeto em modo dev - npm run dev.
+
+### React Razzler

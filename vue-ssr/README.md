@@ -1,6 +1,6 @@
-# vue-template-ssr
+# vue-ssr
 
-> Nuxt + vue project to run inside a micro-frontend application
+> project to work via SSR
 
 ## Build Setup
 
