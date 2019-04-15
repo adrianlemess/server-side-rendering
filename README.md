@@ -51,6 +51,7 @@ O processo de renderizar o framework, baixa-lo, buscar os dados para preencher o
 
 ### Vue (create-nuxt-app)
 
+#### Criação de um projeto com SSR
 Ter o npx instalado na máquina
 
 ```bash
@@ -71,10 +72,9 @@ Ir selecionando as opções
 * Framework de teste - jest ou ava
 * Rendering mode - universal app ou SPA. Selecione universal para ser SSR
 
-
 #### Considerações
 
 - O método asyncData no index.vue é responsável por hidratar o componente com dados no first loading da aplicação. Assim antes de entregar para o browser, ele faz a request de posts e já entrega o componente com os dados renderizados.
 - Para rodar o projeto em modo dev - npm run dev.
 
-### React Razzler
+### React (Criação de projeto SSR com Razzler)
