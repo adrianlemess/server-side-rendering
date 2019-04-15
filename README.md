@@ -78,3 +78,11 @@ Ir selecionando as opções
 - Para rodar o projeto em modo dev - npm run dev.
 
 ### React (Criação de projeto SSR com Razzler)
+
+ #### Criação da aplicação
+
+ Criar a aplicação via npx e create-razzler-app
+
+ ```Bash
+ npx create-razzle-app <app-name>
+ ```
