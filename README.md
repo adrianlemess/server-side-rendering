@@ -77,12 +77,31 @@ Ir selecionando as opções
 - O método asyncData no index.vue é responsável por hidratar o componente com dados no first loading da aplicação. Assim antes de entregar para o browser, ele faz a request de posts e já entrega o componente com os dados renderizados.
 - Para rodar o projeto em modo dev - npm run dev.
 
-### React (Criação de projeto SSR com Razzler)
+### Angular (Universal App)
 
  #### Criação da aplicação
 
- Criar a aplicação via npx e create-razzler-app
+Instalar angular-cli
+
+```Bash
+npm install -g @angular/cli 
+```
+
+Criar a aplicação via angular-cli
 
  ```Bash
- npx create-razzle-app <app-name>
+ ng new some-amazing-project
  ```
+
+Adicionar as configs de SSR
+ ```Bash
+ ng add @nguniversal/express-engine --clientProject [name]
+ ```
+
+ Após esse comando será adicionado alguns arquivos como webpack.server.config, main.server.ts, server.ts, os scripts no package.json e mais algumas configurações de SSR.
+
+
+
+ ## Possibilidades futuras
+
+ - Explorar Hypernova e uma nova abordagem de micro-fronts

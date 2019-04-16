@@ -1,13 +1,11 @@
-import React from 'react';
-import Route from 'react-router-dom/Route';
-import Switch from 'react-router-dom/Switch';
-import Home from './Home';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 
-const App = () => (
-  <Switch>
-    <Route exact path="/" component={Home} />
-  </Switch>
-);
+const App = (props) => {
+
+  return (<div>
+   Name: {!props.firstName || !props.lastName ? 'Loading...' : `${props.firstName} ${props.lastName}`}
+  </div>) 
+};
 
 export default App;
