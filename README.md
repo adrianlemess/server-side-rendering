@@ -100,8 +100,37 @@ Adicionar as configs de SSR
 
  Após esse comando será adicionado alguns arquivos como webpack.server.config, main.server.ts, server.ts, os scripts no package.json e mais algumas configurações de SSR.
 
+O angular universal tem dois tipos de SSR, Dynamic SSR e Pre-render.
+
+#### Dynamic SSR
+
+A aplicação irá rodar encima do Node e a cada rota chamada pelo browser, o server irá dinamicamente gerar e serializar a aplicação retornando a string para o browser.
+Quando utilizar Dynamic SSR:
+* As rotas necessárias do SSR mudam constantemente
+* Alguns dados são dinâmicos como Trend de noticias, informações ao vivo, etc e é necessário carregar esses dados corretamente a cada render server side
+
+#### Static pre-rendering
+
+É quando queremos pré-renderizar uma lista de rotas e criar arquivos estáticos (templates - index.html, about-us.html, etc) e o servidor irá escolher qual arquivo servir dependendo da rota chamada. Pre-render irá ter um first loading mais rápido que o Dynamic SEO, pois não é necessário esperar o server serializar a aplicação, pois os templates já estão mapeados para cada rota.
+
+Quando utilizar?
+
+* As páginas da aplicação são relativamente estáticas (pelo menos as rotas que estão sendo feitas o pre-render). ex: homepage, about us, contact us
+* Várias pequenas partes dinâmicas do site podem ser apontadas para a renderização via CSR.
+* A aplicação não é atualizada frequentemente.
+  * Sempre que uma alteração de rota é feita é necessário rebuildar os arquivos estáticos e republica-los
+
+#### Rodar a aplicação criada com angular universal
+
+```
+npm run build:ssr && npm run serve:ssr
+```
+
+#### Considerações finais sobre o angular universal
+
+A Poc feita atinge os objetivos que resolvi validar. Consegui fazer uma chamada a API via SSR e já entregar pronta a página "hydrated" para o browser com os dados devidamente preenchidos.
 
 
  ## Possibilidades futuras
 
- - Explorar Hypernova e uma nova abordagem de micro-fronts
+ - Explorar Hypernova e uma nova abordagem de micro-fronts (https://github.com/marconi1992/hypernova-micro-frontends) e (https://medium.com/js-dojo/serverless-micro-frontends-using-vue-js-aws-lambda-and-hypernova-835d6f2b3bc9)

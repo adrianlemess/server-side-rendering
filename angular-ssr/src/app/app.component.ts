@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from './post.model';
 import { HelloWorldService } from './hello-world.service';
+import { take } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,19 @@ export class AppComponent implements OnInit {
   posts: Post[] = [];
 
   constructor(private helloWorldService: HelloWorldService) {
+    console.log('Constructor do app');
   }
 
   ngOnInit() {
+    console.log('Constructor do ngOnInit');
+
     this.helloWorldService.getPosts()
+      .pipe(
+        take(1)
+      )
       .subscribe(posts => {
         this.posts = posts;
+        console.log(this.posts);
       });
   }
 }
