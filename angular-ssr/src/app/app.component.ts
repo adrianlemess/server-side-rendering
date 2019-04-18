@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('Constructor do ngOnInit');
 
     this.helloWorldService.getPosts()
       .pipe(
